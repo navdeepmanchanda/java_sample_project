@@ -19,13 +19,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <repositories>
+    <distributionManagement>
       <repository>
 	<id>devops</id>
         <name>maven-release</name>
 	<url>http://192.168.1.7:8081/repository/maven-releases/</url>
+        <layout>default</layout>
       </repository>
-    </repositories>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
