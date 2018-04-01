@@ -28,4 +28,8 @@ node {
            }
         }
     }
+    stage("nexus upload") {
+      echo "INFO => uploading artifacts to nexus, please wait..."
+      sh "mvn deploy"
+    }
 }
